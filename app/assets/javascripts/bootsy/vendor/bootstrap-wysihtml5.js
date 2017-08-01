@@ -5,9 +5,9 @@
         "font-styles": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
             return "<li class='btn-group'>" +
-              "<a class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' title='" + locale.font_styles.title + "'>" +
+              "<button class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' title='" + locale.font_styles.title + "'>" +
               "<i class='fa fa-font'></i>&nbsp;<span class='current-font'>" + locale.font_styles.normal + "</span>&nbsp;<b class='caret'></b>" +
-              "</a>" +
+              "</button>" +
               "<ul class='dropdown-menu'>" +
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='div' tabindex='-1' role='menuitem'>" + locale.font_styles.normal + "</a></li>" +
                 "<li><a data-wysihtml5-command='formatBlock' data-wysihtml5-command-value='h1' tabindex='-1' role='menuitem'>" + locale.font_styles.h1 + "</a></li>" +
@@ -100,9 +100,9 @@
         "color": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
             return "<li class='btn-group'>" +
-              "<a class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' tabindex='-1' title='" + locale.colours.title + "'>" +
+              "<button class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' tabindex='-1' title='" + locale.colours.title + "'>" +
                 "<span class='current-color'>" + locale.colours.black + "</span>&nbsp;<b class='caret'></b>" +
-              "</a>" +
+              "</button>" +
               "<ul class='dropdown-menu'>" +
                 "<li><div class='wysihtml5-colors' data-wysihtml5-command-value='black'></div><a class='wysihtml5-colors-title' data-wysihtml5-command='foreColor' data-wysihtml5-command-value='black' role='menuitem'>" + locale.colours.black + "</a></li>" +
                 "<li><div class='wysihtml5-colors' data-wysihtml5-command-value='silver'></div><a class='wysihtml5-colors-title' data-wysihtml5-command='foreColor' data-wysihtml5-command-value='silver' role='menuitem'>" + locale.colours.silver + "</a></li>" +
