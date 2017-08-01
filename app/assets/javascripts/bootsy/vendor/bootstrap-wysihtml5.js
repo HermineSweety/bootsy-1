@@ -4,7 +4,7 @@
     var tpl = {
         "font-styles": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
-            return "<li class='dropdown'>" +
+            return "<li class='btn-group'>" +
               "<a class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' title='" + locale.font_styles.title + "'>" +
               "<i class='fa fa-font'></i>&nbsp;<span class='current-font'>" + locale.font_styles.normal + "</span>&nbsp;<b class='caret'></b>" +
               "</a>" +
@@ -99,7 +99,7 @@
 
         "color": function(locale, options) {
             var size = (options && options.size) ? ' btn-'+options.size : '';
-            return "<li class='dropdown'>" +
+            return "<li class='btn-group'>" +
               "<a class='btn btn-secondary dropdown-toggle" + size + "' data-toggle='dropdown' href='#' tabindex='-1' title='" + locale.colours.title + "'>" +
                 "<span class='current-color'>" + locale.colours.black + "</span>&nbsp;<b class='caret'></b>" +
               "</a>" +
