@@ -1,0 +1,14 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  Exclude:
+    - spec/dummy/db/**/*
+
+Metrics/MethodLength:
+  Max: 15
+
+Rails:
+  Enabled: true
+
+Metrics/BlockLength:
+  Exclude:
+    - spec/**/*
